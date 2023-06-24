@@ -26,6 +26,12 @@ class MenusController < ApplicationController
       end
     end
 
+    def create
+       current_user = current_user()
+       order = Order.create(menu_id: params[:id], user_id: current_user.id)
+       render json: order, status: :created
+    end
+
     private
     def render_not_found_response
       render json: { error: "Oops! That is not on our Menu" }, status: :not_found
