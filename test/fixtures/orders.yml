@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  isFulfilled: MyString
+  boolean: MyString
+  user: one
+  menu_item: one
+
+two:
+  isFulfilled: MyString
+  boolean: MyString
+  user: two
+  menu_item: two
