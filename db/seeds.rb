@@ -17,7 +17,7 @@ restaurants = Restaurant.create([
   {name:Faker::Restaurant.name, location: Faker::Address.full_address},
 ])
 
-menu_items = MenuItem.create([
+menus = Menu.create([
   {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 1 },
   {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 2 },
   {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 3 },
@@ -32,15 +32,15 @@ menu_items = MenuItem.create([
 
 
 orders = Order.create([
-  {menu_item_id: 1, user_id: 1},
-  {menu_item_id: 2, user_id: 2},
-  {menu_item_id: 3, user_id: 3},
-  {menu_item_id: 4, user_id: 4},
-  {menu_item_id: 5, user_id: 5},
-  {menu_item_id: 6, user_id: 1},
-  {menu_item_id: 7, user_id: 2},
-  {menu_item_id: 8, user_id: 3},
-  {menu_item_id: 9, user_id: 4},
-  {menu_item_id: 10, user_id: 5},
+  {menu_id: 1, user_id: 1},
+  {menu_id: 2, user_id: 2},
+  {menu_id: 3, user_id: 3},
+  {menu_id: 4, user_id: 4},
+  {menu_id: 5, user_id: 5},
+  {menu_id: 6, user_id: 1},
+  {menu_id: 7, user_id: 2},
+  {menu_id: 8, user_id: 3},
+  {menu_id: 9, user_id: 4},
+  {menu_id: 10, user_id: 5},
 ])
 puts "Done seeding."
