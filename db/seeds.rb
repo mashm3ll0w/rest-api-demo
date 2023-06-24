@@ -32,15 +32,15 @@ menu_items = MenuItem.create([
 
 
 orders = Order.create([
-  {menu_item: 1, user_id: 1},
-  {menu_item: 2, user_id: 2},
-  {menu_item: 3, user_id: 3},
-  {menu_item: 4, user_id: 4},
-  {menu_item: 5, user_id: 5},
-  {menu_item: 6, user_id: 1},
-  {menu_item: 7, user_id: 2},
-  {menu_item: 8, user_id: 3},
-  {menu_item: 9, user_id: 4},
-  {menu_item: 10, user_id: 5},
+  {menu_item_id: 1, user_id: 1},
+  {menu_item_id: 2, user_id: 2},
+  {menu_item_id: 3, user_id: 3},
+  {menu_item_id: 4, user_id: 4},
+  {menu_item_id: 5, user_id: 5},
+  {menu_item_id: 6, user_id: 1},
+  {menu_item_id: 7, user_id: 2},
+  {menu_item_id: 8, user_id: 3},
+  {menu_item_id: 9, user_id: 4},
+  {menu_item_id: 10, user_id: 5},
 ])
 puts "Done seeding."
