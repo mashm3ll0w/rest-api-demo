@@ -1,4 +1,3 @@
-class MenuItemSerializer < ActiveModel::Serializer
+class MenuSerializer < ActiveModel::Serializer
   attributes :id, :name, :price
-  has_one :restaurant
 end
