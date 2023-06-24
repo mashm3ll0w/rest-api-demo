@@ -18,16 +18,16 @@ restaurants = Restaurant.create([
 ])
 
 menu_items = MenuItem.create([
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 1 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 2 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 3 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 4 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 5 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 1 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 2 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 3 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 4 },
-  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 5 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 1 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 2 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 3 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 4 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 5 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 1 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 2 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 3 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 4 },
+  {name:Faker::Food.dish, price:Faker::Number.within(range: 11..99), restaurant_id: 5 },
 ])
 
 
