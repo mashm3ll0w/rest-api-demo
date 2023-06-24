@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   post "/signup", to: "users#create"
   post "/login", to: "auth#create"
-  get "/", to: "restaurants#index"
+  get "/", to: "restaurants#welcome"
 end
