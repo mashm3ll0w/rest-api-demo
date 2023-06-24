@@ -1,7 +1,46 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+puts "Seeding data..."
+
+users = User.create([
+  {name: "John", email:"john@mail.com", password: "john"},
+  {name: "Jack", email:"jack@mail.com", password: "jack"},
+  {name: "Joseph", email:"joseph@mail.com", password: "joseph"},
+  {name: "Joan", email:"joan@mail.com", password: "joan"},
+  {name: "Jill", email:"jill@mail.com", password: "jill"},
+])
+
+restaurants = Restaurant.create([
+  {name:Faker::Restaurant.name, location: Faker::Address.full_address},
+  {name:Faker::Restaurant.name, location: Faker::Address.full_address},
+  {name:Faker::Restaurant.name, location: Faker::Address.full_address},
+  {name:Faker::Restaurant.name, location: Faker::Address.full_address},
+  {name:Faker::Restaurant.name, location: Faker::Address.full_address},
+  {name:Faker::Restaurant.name, location: Faker::Address.full_address},
+])
+
+menu_items = MenuItem.create([
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 1 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 2 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 3 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 4 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 5 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 1 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 2 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 3 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 4 },
+  {name:Faker::Food.dish, price:Faker::Number.decimal(l_digits: 2), restaurant_id: 5 },
+])
+
+
+orders = Order.create([
+  {menu_item: 1, user_id: 1},
+  {menu_item: 2, user_id: 2},
+  {menu_item: 3, user_id: 3},
+  {menu_item: 4, user_id: 4},
+  {menu_item: 5, user_id: 5},
+  {menu_item: 6, user_id: 1},
+  {menu_item: 7, user_id: 2},
+  {menu_item: 8, user_id: 3},
+  {menu_item: 9, user_id: 4},
+  {menu_item: 10, user_id: 5},
+])
+puts "Done seeding."
