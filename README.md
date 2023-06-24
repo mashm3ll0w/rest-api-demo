@@ -6,6 +6,7 @@
 <p align="center">
   <a href="#description">Project Description</a> •
   <a href="#setup">Project Setup</a> •
+  <a href="#documentation">Documentation</a> •
   <a href="#api-endpoints">API Endpoints</a> •
   <a href="#authors">Authors</a> •
   <a href="#license">License</a>
@@ -37,6 +38,10 @@ Note:
 1. This project depends on `ruby 2.7.6`
 2. For testing, `Postman` is recommended for it's ease of use (you can use curl if you are comfortable on the terminal)
 
+
+## Documentation
+
+The Project documentation can be viewed at `https://documenter.getpostman.com/view/24296873/2s93z6dj6U`
 
 ## API Endpoints
 
